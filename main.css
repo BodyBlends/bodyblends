@@ -1,4 +1,4 @@
-/* Default background for larger screens */
+/* Reset default margin and padding */
 body {
     margin: 0;
     padding: 0;
@@ -8,15 +8,15 @@ body {
 }
 
 .container {
-    text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 50px auto;
-    max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Ensure h1 is at the top */
 h1 {
+    margin: 0;
+    padding: 20px;
     font-size: 2em;
     color: #333;
 }
@@ -24,7 +24,9 @@ h1 {
 /* Responsive Design */
 @media (min-width: 600px) {
     .container {
+        padding: 20px;
         max-width: 80%;
+        margin: 0 auto;
     }
 
     h1 {
@@ -34,7 +36,9 @@ h1 {
 
 @media (min-width: 1024px) {
     .container {
+        padding: 20px;
         max-width: 60%;
+        margin: 0 auto;
     }
 
     h1 {
@@ -47,5 +51,14 @@ h1 {
     body {
         background: url('/images/main-mobile.png') no-repeat center center fixed;
         background-size: cover;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }
